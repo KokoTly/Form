@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>User Registration Form</title>
+    
+    <style>
+        body {
+            display:flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background-color: #bb8e3adc;
+        }
+        .form-container {
+            background-color: rgba(21, 20, 20, 0.375);
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        .form-container h2 {
+            margin-bottom: 20px;
+        }
+        .form-container label {
+            display: block;
+            margin-bottom: 10px;
+        }
+        .form-container button {
+            width: 100%;
+            padding: 10px;
+            background-color: #4CAF50;
+            color: white;
+            border-radius: 10px;
+            cursor: pointer;
+        }
+        .form-container button:hover {
+            background-color: hsl(123, 57%, 34%);
+        }
+    </style>
+</head>
+<body>
+    <div class="form-container">
+    <h2>Registration Form</h2>
+    <form>
+        <div>
+            <label for="uname">User's Name:</label>
+            <input type="text" id="uname" name="uname" required>
+         </div>
+         <br>
+
+         <div>
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required >
+        </div> 
+        <br>
+
+        <div>
+            <label for="pword">Password:</label>
+            <input type="pword" id="pword" name="pword" maxlength="20" required >
+        </div> 
+        <br>
+
+        <div>
+            <label>
+                <input type="checkbox" id="tnc" name="tnc" required>
+                I agree to the <a href="#">terms and conditions</a>
+            </label>
+         </div>
+        <br>
+
+         <div>
+            <button type="submit">Submit</button>
+        </div>
+    </div>
+    </form>    
+
+</body>
+</html>
